@@ -18,6 +18,9 @@ update : $(PHTML)
 	rsync --progress -ua --delete styles html/
 	rsync --progress -ua --delete images html/
 	rsync --progress -ua --delete files html/
+	@echo ' done.'
+
+deploy : update
 	@echo 'Copying to server...'
 	# insert code for copying to server here.
 	chmod -R a+r html/
