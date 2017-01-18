@@ -29,7 +29,7 @@ deploy : update
 
 
 html/%.html : content/%.md html/$(MENU).html html/$(FOOTER).html $(CSS)
-	pandoc -s -S -c styles/styles.css -B html/$(MENU).html -A html/$(FOOTER).html -o $@ $<
+	pandoc -s -S -c $(CSS) -B html/$(MENU).html -A html/$(FOOTER).html -o $@ $<
 
 html/$(MENU).html : helper/$(MENU).md helper/$(MENU).template
 	pandoc -s --template helper/$(MENU).template --toc -o $@ $<
