@@ -4,7 +4,7 @@ Yet another static website generator, inspired by [jem-press][jem-press], [jemdo
 
 This basically supports nothing except static webpages for now, using pandocs and a simple makefile. In the future I might want to add support for Mathjax.
 
-I used this to build my website: [jtsense.com][jtsense]
+I used this to build my website: [jtsense.com][jtsense]. Source code here: [code][jtsense-code]
 
 ### Dependencies
 Requires [Pandoc][pandoc].
@@ -37,6 +37,7 @@ As an example, this repository can be built as-is.
 Warning: by design, anything deleted locally will be deleted on the server.
 
 [jtsense]: http://jtsense.com
+[jtsense-code]: https://github.com/jtamir/website
 [pandoc]: http://pandoc.org/
 [jemdoc]: http://jemdoc.jaboc.net/
 [jemdoc-mj]: http://www.mit.edu/~wsshin/jemdoc+mathjax.html
